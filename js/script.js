@@ -99,14 +99,40 @@ function abouttext(){
         scrollTrigger:{
             trigger:"#page4",
             scroller:"body",
-            start:"top 60%",
+            start:"top 24%",
             end:"top 45%",
-            markers:true,
-            scrub:2
+            // markers:true,
+            scrub:5
+        }
+    })
+
+      gsap.from("#col2",{
+        x:70,
+        y:70,
+        duration:0.8,
+        scrollTrigger:{
+            trigger:"#page4",
+            scroller:"body",
+            start:"top 24%",
+            end:"top 45%",
+            // markers:true,
+            scrub:5
+        }
+    })
+
+    // page5 h1 anim
+    gsap.from("#page5 h1",{
+        y:60,
+        scrollTrigger:{
+            trigger:"#page5 h1",
+            scroller:"body",
+            start:"top 70%",
+            end:"top 55%",
+            // markers:true,
+            scrub:1
         }
     })
 }
-
 
 
 
